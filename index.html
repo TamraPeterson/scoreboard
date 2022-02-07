@@ -4,24 +4,41 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<script src="app.js"></script>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+  integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
 </head>
 
-<body>
+<body class="bg-light">
+  <header>
+    <h2 class="text-center m-5 text-primary">Scoreboard!</h2>
+  </header>
 
-  <main class="container card">
-
-    <div class="">
-      Team 1
-      <button onclick="scoreOne()">Team 1!</button>
+  <main class="container card bg-primary text-white ">
+    <div class="row">
+      <div class="col-12 col-md-6  d-flex justify-content-center mt-3">
+        <h4 class="">
+          Team 1 score: <span id="team1score">0</span>
+          <button class="btn btn-info" onclick="increaseScore('team1')">Score!</button>
+        </h4>
+      </div>
+      <h4 class="col-12 col-md-6  d-flex justify-content-center mt-3">
+        <div>
+          Team 2 score: <span id="team2score">0</span>
+          <button class="btn btn-info" onclick="increaseScore('team2')">Score!</button>
+        </div>
+      </h4>
     </div>
-    <div>
-      Team 2
-      <button onclick="scoreTwo()">Team 2!</button>
+    <div class="row ">
+      <div class="col-12 d-flex justify-content-center m-3">
+        <button class="btn btn-info" onclick="resetScore()">Reset Scores</button>
+      </div>
     </div>
-
   </main>
 
+  <script src="app.js"></script>
 </body>
 
 </html>
