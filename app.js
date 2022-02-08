@@ -36,3 +36,18 @@ function timesTwo(team) {
     document.getElementById('team2score').innerText = scoreboardTwo
   }
 }
+
+function losePoint(team) {
+  if (team == 'team1') {
+    scoreboardOne--
+    document.getElementById('team1score').innerText = scoreboardOne
+  }
+  else {
+    scoreboardTwo--
+    document.getElementById('team2score').innerText = scoreboardTwo
+  }
+}
+
+function addTeam() {
+
+}

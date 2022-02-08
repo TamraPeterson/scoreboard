@@ -23,6 +23,7 @@
           Team 1 score: <span id="team1score">0</span>
           <button class="btn btn-info" onclick="increaseScore('team1')">Score!</button>
           <button class="btn btn-info" onclick="timesTwo('team1')">Double Prizes!</button>
+          <button class="btn btn-warning" onclick="losePoint('team1')">Lose a Point</button>
         </h4>
       </div>
       <h4 class="col-12 col-md-6  d-flex justify-content-center mt-3">
@@ -30,12 +31,14 @@
           Team 2 score: <span id="team2score">0</span>
           <button class="btn btn-info" onclick="increaseScore('team2')">Score!</button>
           <button class="btn btn-info" onclick="timesTwo('team2')">Double Prizes!</button>
+          <button class="btn btn-warning" onclick="losePoint('team2')">Lose a Point</button>
         </div>
       </h4>
     </div>
     <div class="row ">
-      <div class="col-12 d-flex justify-content-center m-3">
-        <button class="btn btn-info" onclick="resetScore()">Reset Scores</button>
+      <div class="col-12 d-flex justify-content-center space-between m-3 ">
+        <button class="btn btn-info m-3" onclick="resetScore()">Reset Scores</button>
+        <button class="btn btn-info m-3" onclick="newTeam()">Add a team</button>
       </div>
     </div>
   </main>
