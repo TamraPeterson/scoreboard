@@ -18,11 +18,21 @@ function increaseScore(team) {
 
 }
 function resetScore() {
-  console.log("reset")
   scoreboardOne = 0
   scoreboardTwo = 0
   document.getElementById('team1score').innerText = 0
   document.getElementById('team2score').innerText = 0
 
 
+}
+
+function timesTwo(team) {
+  if (team == 'team1') {
+    scoreboardOne += 2
+    document.getElementById('team1score').innerText = scoreboardOne
+  }
+  else {
+    scoreboardTwo += 2
+    document.getElementById('team2score').innerText = scoreboardTwo
+  }
 }
